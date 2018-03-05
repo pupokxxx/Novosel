@@ -1,0 +1,134 @@
+@import "./bootstrap.min.css";
+@import "../fonts/css/fontawesome-all.min.css";
+@import "../fonts/Lato.css";
+
+.text-bold{font-weight: bold;}
+/* хлебные крошки */
+.breadcrumb{background: none;}
+.container_card h2{
+font-size: 28px;
+font-weight: bold;
+text-transform: uppercase;
+color: #424348;
+}
+.fa-map-marker-alt{color: #81ba27; margin-right: 10px;}
+.container_card-adress{font-size: 14px;color: #424348;}
+.container_card-adress p span{color: grey;}
+.product_card{margin-top: 2.9em;}
+.product_card .col-xs-12{padding: 0;}
+
+.product_card		ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+      display: flex;
+		}
+.product_card		ul.tabs li{
+			background: none;
+			color: #424348;
+      font-weight: bold;
+      font-size: 16px;
+			display: inline-block;
+			padding: 10px 15px;
+			cursor: pointer;
+	    -webkit-border-radius: 5px 5px 0 0;
+	    -moz-border-radius: 5px 5px 0 0;
+	    border-radius: 5px 5px 0 0;
+      border: #81ba27 1px solid;
+      border-bottom: none;
+		}
+
+	.product_card	ul.tabs li.active{
+			background: #81ba27;
+			color: #fff;
+      font-size: 16px;
+      font-weight: bold;
+	    -webkit-border-radius: 5px 5px 0 0;
+	    -moz-border-radius: 5px 5px 0 0;
+	    border-radius: 5px 5px 0 0;
+      border-color:  #81ba27;
+		}
+  .product_card	ul.tabs li.active span,
+  .product_card		ul.tabs li span{font-weight: normal;}
+.product_card	.tab-content{
+			display: none;
+		}
+
+	.product_card	.tab-content.active{
+			display: block;
+      padding: 0;
+		}
+/*----- slider product-foto and price ------*/
+.product_card	.hide-bullets {
+list-style:none;
+margin-top:20px;
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+padding: 0;
+}
+.product_card	.hide-bullets .img-preview{padding: 5px;}
+.product_card .carousel .carousel-control{
+  width: 40px;
+	height: 40px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background-color: #81ba27;
+  background-image: none!important;
+  position: absolute;
+  margin: 0 3%;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+}
+.product_card .carousel .carousel-control span{
+  text-align: center;
+  vertical-align: bottom;
+}
+.hide-bullets li.img-preview:first-child{
+  box-shadow: inset 40px 0 45px -15px #fff;
+  z-index: 100;
+}
+.hide-bullets {position: relative; z-index: 90;}
+.hide-bullets .img-preview a.thumbnail{
+  border: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+.hide-bullets .img-preview .thumbnail.active{
+  border: #e86c20 2px solid;
+  border-radius: 0;
+}
+.card_left-price{
+  margin: 3em 0 0 3.031em;
+	color: #e86c20;
+  font-family: "Helvetica"
+}
+.card_left-price p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14pt;
+}
+.card_left-price p span{
+font-size: 16pt;
+padding-right: 15px;
+-moz-transform: matrix( 1.22495274102079,0,0,1.22495269775391,0,0);
+-webkit-transform: matrix( 1.22495274102079,0,0,1.22495269775391,0,0);
+-ms-transform: matrix( 1.22495274102079,0,0,1.22495269775391,0,0);
+}
+.card_left-price .price_ipoteka{
+  color: #fff;
+  -webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	background: #e86c20;
+  text-align: center;
+  padding: 1.125em;
+}
+
+@media (max-width: 1366px) and (min-width: 320px){
+  .product_card ul.tabs li.active {font-size: 10pt;}
+  .product_card ul.tabs li{font-size: 7pt;}
+
+}

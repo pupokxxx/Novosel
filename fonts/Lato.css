@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'LatoRegular';
+    src: url('LatoRegular.eot');
+    src: url('LatoRegular.eot') format('embedded-opentype'),
+         url('LatoRegular.woff2') format('woff2'),
+         url('LatoRegular.woff') format('woff'),
+         url('LatoRegular.ttf') format('truetype'),
+         url('LatoRegular.svg#LatoRegular') format('svg');
+}
+@font-face {
+    font-family: 'LatoBold';
+    src: url('LatoBold.eot');
+    src: url('LatoBold.eot') format('embedded-opentype'),
+         url('LatoBold.woff2') format('woff2'),
+         url('LatoBold.woff') format('woff'),
+         url('LatoBold.ttf') format('truetype'),
+         url('LatoBold.svg#LatoBold') format('svg');
+}
