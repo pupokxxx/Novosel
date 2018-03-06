@@ -19,9 +19,13 @@ jQuery(document).ready(function($) {
        var id = this.id.substr(this.id.lastIndexOf("-") + 1);
        var id = parseInt(id);
        $('#myCarousel').carousel(id);
-       
+
        $(".img-preview .thumbnail").removeClass("active");
        $(this).toggleClass("active");
    });
+
+	 $('.single-item').slick({
+		 dots: true,
+	 });
 
 });
