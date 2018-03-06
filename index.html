@@ -13,24 +13,26 @@
 </head>
 
 <body>
-  <div class="container clearfix">
+  <div class="container-fluid">
     <!-- breadcrumb -->
-    <ul class="breadcrumb">
+    <ul class="breadcrumb container clearfix">
       <li><a href="#">Главная</a></li>
       <li><a href="#">Недвижимость</a></li>
       <li><a href="#">Квартиры</a></li>
       <li>Двухкомнатные</li>
     </ul>
     <!-- breadcrumb end -->
-    <div class="container container_card">
-      <h2>Квартира 2-х комнатная</h2>
-      <div class="container_card-adress">
-        <span class="fas fa-map-marker-alt pull-left" aria-hidden="true"></span>
-        <p>г. Кемерово, ул. Константинопольская, д. 39/5 <span class="text-di">(5,3 км. до центра)</span> </p>
-      </div>
-      <!-- product-foto and price  -->
-      <div class="product_card">
-        <div class="container col-xs-12 col-sm-8">
+    <!-- container card description-->
+    <div class="container-fluid container_card">
+      <div class="container">
+        <h2>Квартира 2-х комнатная</h2>
+        <div class="container_card-adress">
+          <span class="fas fa-map-marker-alt pull-left" aria-hidden="true"></span>
+          <p>г. Кемерово, ул. Константинопольская, д. 39/5 <span class="text-di">(5,3 км. до центра)</span> </p>
+        </div>
+        <!-- product-foto and price  -->
+        <div class="product_card">
+          <div class="container col-xs-12 col-sm-8">
           <ul class="tabs">
             <li class="tab-link active" data-tab="tab-1">Фотографии <span>(14 из 54)</span></li>
             <li class="tab-link" data-tab="tab-2">Планировка <span>(12)</span> </li>
@@ -140,14 +142,89 @@
             Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4 product_card-lef">
+          <div class="col-xs-12 col-sm-4 product_card-lef">
           <div class="rowt card_left-price">
             <p class="text-uppercase">стоимость <span class="text-right">34 060 000 &#8381;</span></p>
-            <div class="container col-xs-12 price_ipoteka">В ипотеку: <span class="text-bold">12 570 &#8381; / мес.</span></div>
+            <div class="container col-xs-12 col-sm-12 price_ipoteka">В ипотеку: <span class="text-bold">12 570 &#8381; / мес.</span></div>
+            <div class="container col-xs-12 card_left-rooms">
+              <div class="col-xs-12 col-sm-5"><img src="./img/floor.png" alt=""> 5 комнат</div>
+              <div class="col-xs-12 col-sm-7"><img src="./img/sqr.png" alt=""> Площадь 55 м<sup>2</sup></div>
+            </div>
+            <div class="container col-xs-12 c0l-sm-12 card_left-info">
+              <div class="row">
+                <div class="col-xs-12 col-sm-5">
+                  <p>Серия: <span class="text-bold">инд</span></p>
+                  <p>Этаж: <span class="text-bold">5 из 5</span></p>
+                </div>
+                <div class="col-sx-12 col-sm-7">
+                  <p>Код объекта: <span class="text-bold">5550567</span></p>
+                  <p>Цена за м:<sup>2</sup><span class="text-bold">50 000</span></p>
+                </div>
+              </div>
+              <div class="row col-xs-12">
+                <p>Год постройки:<span class="text-bold">1975</span></p>
+                <p>Высота потолков:<span class="text-bold">2,6 м</span></p>
+                <p>Вид ремонта:<span class="text-bold">косметический</span></p>
+                <p>Стоимость услуг:<span class="text-bold total_orice"> 19 689 &#8381;</span></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+      <div class="row apartment_description">
+        <div class="container">
+          <div class="col-xs-12 col-sm-8 apartment_description-left">
+            <h4>Описание квартиры</h4>
+            <div class="row block_text">
+              <p>Просторная 3-комнатная квартира в 1 микрорайоне. Сделан косметический ремонт: На полу линолеум хорошего качества, стены оклеены обоями, во всех комнатах натяжные потолки, необходим ремонт в санузлах. После продажи остаётся вся мебель. Очень удобная планировка, все комнаты изолированы. Большая полноценная лоджия. Дом расположен в районе с развитой инфраструктурой и хорошей транспортной развязкой. Все необходимое для комфортной жизни расположено рядом с домом: детский сад, школа, торговые центры, медицинские учреждения. Остановка общественного транспорта находится в непосредственной близости от дома.</p>
+            </div>
+            <div class="row block_other">
+              <p><span class="text-bold">Окна:</span> Пластиковые</p>
+              <p><span class="text-bold">Характеристика дома и придомовой территории:</span> Открытый двор Открытый двор Открытый двор Открытый двор</p>
+              <p><span class="text-bold">В квартире имеется:</span> лкарнет, x-box, туалет, джакузи</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-sm-4 apartment_description-right">
+            <h4>об этой квартире знает всё</h4>
+            <div class="block_owner">
+              <div class="container-fluid">
+                <img src="./img/avatar.png" alt="avatar" class="img-circle">
+                <p class="text-bold">Всезнаева Конституция</p>
+                <p>Ваш риелтор</p>
+              </div>
+              <div class="block_kontackt">
+                <div class="contackt_phone">
+                  <a href="tel:+79630366966"><img src="./img/phone.png" alt="" class="img-rounded center-block">+7 (963) 036-69-66</a>
+                </div>
+                <div class="contackt_mail">
+                  <a href="mailto:vseznaeva@mai.ru"><img src="./img/mail.png" alt=""> vseznaeva@mai.ru</a>
+                </div>
+              </div>
+              <div class="block_contact-form">
+                  <form>
+                    <div>
+                      <input id="telNo" name="telNo" type="tel" placeholder="Ваш телефон" required>
+                      <input type="submit" value="связаться" />
+                    </div>
+                  </form>
+                  <p>Oтпpaвляя зaявкy, вы coглaшaeтecь  нa oбpaбoткy <span>пepcoнaльныx дaнных</span></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-  </div>
+    </div>
+    <!-- Why we block -->
+    <div class="container">
+      <h4 class="text-center">Почему выбирают нас?</h4>
+      <div class="col-xs-3">
+
+      </div>
+      <div class="col-xs-3"></div>
+      <div class="col-xs-3"></div>
+      <div class="col-xs-3"></div>
+    </div>
 
   </div>
 

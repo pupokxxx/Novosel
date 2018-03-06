@@ -15,7 +15,8 @@ color: #424348;
 .container_card-adress{font-size: 14px;color: #424348;}
 .container_card-adress p span{color: grey;}
 .product_card{margin-top: 2.9em;}
-.product_card .col-xs-12{padding: 0;}
+.product_card>div:first-child,
+.product_card #main_area .col-xs-12{padding: 0;}
 
 .product_card		ul.tabs{
 			margin: 0px;
@@ -123,8 +124,9 @@ padding: 0;
   border: #e86c20 2px solid;
   border-radius: 0;
 }
+/*----left block----*/
 .card_left-price{
-  margin: 3em 0 0 3.031em;
+  margin: 3em 0 0 1.131em;
 	color: #e86c20;
   font-family: "Helvetica"
 }
@@ -147,11 +149,129 @@ padding-right: 15px;
 	border-radius: 5px;
 	background: #e86c20;
   text-align: center;
+	font-size: 12pt;
   padding: 1.125em;
 }
+.card_left-rooms{
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 1em;
+	display: flex;
+	justify-content: space-between;
+}
+.card_left-rooms div{
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: #81ba27 1px solid;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding:10px;
+	font-size: 12pt;
+	font-weight: bold;
+	color: #81ba27;
+}
+.card_left-rooms div:first-child{margin-right: 0.7em;}
+.card_left-info {
+	padding-left: 0;
+	margin-top: 2em;
+	color: #424348;
+}
+.card_left-info p {
+	display: block;
+	font-size: 12pt;
+	color: #424348;
+}
+.card_left-info p span{font-size: 11pt; padding-left: 5px;}
+.card_left-info .row:last-child{margin-top: 2em;}
+.card_left-info .total_orice{
+	font-size: 14pt;
+	font-weight: bold;
+	color: #81ba27;
+}
+.apartment_description{
+	background: #F3F3F3;
+	margin: 0 -30px;
+	padding: 2.5em;
+}
+.apartment_description .apartment_description-left h4{
+	font-size: 16pt;
+	font-weight: bold;
+	color: #424348;
+	margin-left: -15px;
+}
+.apartment_description .apartment_description-left {font-size: 14pt;}
+.apartment_description .apartment_description-left .block_other p{margin-bottom: 0;}
+.apartment_description .apartment_description-right h4{
+	margin-left:1em;
+	font-size: 11pt;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #e86c20;
+}
+.apartment_description .apartment_description-right .block_owner {
+	margin-left: 1em;
+	background: #fff;
+	padding: 1em;
+}
+.apartment_description .apartment_description-right .block_owner img{float: left;}
+ .block_owner>.container-fluid p{
+	font-size: 12pt;
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 8.688em;
+	margin-bottom: 0;
+}
+.apartment_description .apartment_description-right .block_owner p:last-child{color: #9e9fa2;}
+.block_kontackt{margin-top: 1.5em;}
+
+.contackt_phone, .contackt_mail{
+	padding-left: 15px;
+	margin-bottom: .8em;
+	 font-size: 14pt;
+	 display: flex;
+	 justify-content:flex-start;
+	 align-items: center;
+ }
+ .contackt_phone a, .contackt_mail a{display: flex;align-items: center;color: #424348;}
+ .contackt_phone img, .contackt_mail img{margin-right: 15px;}
+	.block_contact-form {padding: 1em 0 1em 15px;}
+ .block_contact-form [type="tel"]{
+	width: 130px;
+	height: 40px;
+ 	-webkit-border-radius: 20px;
+ 	-moz-border-radius: 20px;
+ 	border-radius: 20px;
+	border: #81ba27 1px solid;
+	text-align: center;
+ }
+ ::-webkit-input-placeholder {color:#9e9fa2;}
+::-moz-placeholder          {color:#9e9fa2;}/* Firefox 19+ */
+:-moz-placeholder           {color:#9e9fa2;}/* Firefox 18- */
+:-ms-input-placeholder      {color:#9e9fa2;}
+
+ .block_contact-form [type="submit"]{
+	width: 130px;
+	height: 40px;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background-color: #e86c20;
+	border: none;
+	color: #fff;
+	font-size: 9pt;
+	font-weight: bold;
+	text-transform: uppercase;
+ }
+ .block_owner .block_contact-form p{margin-left: 0; margin-top: 0.7em;color: #9e9fa2;}
+.block_contact-form p span{border-bottom: 1px solid;}
 
 @media (max-width: 1366px) and (min-width: 320px){
   .product_card ul.tabs li.active {font-size: 10pt;}
   .product_card ul.tabs li{font-size: 7pt;}
+	.card_left-price{margin: 3em 0;}
+	.card_left-price p {font-size: 12pt;}
+	.card_left-price p span {font-size: 14pt;}
 
 }
