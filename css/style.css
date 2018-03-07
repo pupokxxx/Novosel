@@ -553,6 +553,34 @@ padding: 10px;
 
 .block_results-left .thumbnail .thumbnail_input a[role="button"] img{margin:auto 2px;}
 .block_results-left .thumbnail .caption .more_info a{font-size: 12px;}
+.block_results-left  .pagination>li>a {
+	border: none;
+	color: #000;
+}
+.pagination>li>a>span{color: #81ba27}
+.block_results-left  .pagination>li:first-child>a,
+.pagination>li:first-child>span,
+.pagination>li:last-child>a,
+.pagination>li:last-child>span{
+	border-radius: 50%; margin:0 1em;
+	border: 1px solid #81ba27;
+}
+.pagination>li:first-child>a:hover,
+.pagination>li:last-child>a:hover{background: #81ba27;}
+.pagination>li:first-child>a:hover>span,
+.pagination>li:last-child>a:hover>span{color: #fff;}
+
+.pagination>.active>a,
+.pagination>.active>a:focus,
+.pagination>.active>a:hover,
+.pagination>li.active>a,
+.pagination>.active>span,
+.pagination>.active>span:focus,
+.pagination>.active>span:hover,
+.pagination > li > a:hover,
+.pagination > li > span:hover,
+.pagination > li > a:focus,
+.pagination > li > span:focus{background: none; color: #81ba27}
 
 @media (max-device-width: 1366px) and (min-device-width: 320px){
 	.container_card,
@@ -580,6 +608,9 @@ padding: 10px;
 	.block_form-calc>.container_tab-content {padding: 1.125em .75em;}
 	.block_form-calc .container_itog {flex-direction: column;}
 	.block_form-calc .container_itog p {margin-right: 0;}
+	.block_results .block_results-left .thumbnail,
+	.block_results .block_results-left .thumbnail .thumbnail_input
+	{display: flex;flex-direction: column; justify-content: space-around;}
+		.block_results .block_results-left .thumbnail .thumbnail_input .more_info{display: inline-block;}
 
-	.block_results{display: none;}
 }
