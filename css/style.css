@@ -285,7 +285,91 @@ padding-right: 15px;
 
 /*----Block calc----*/
 .block_form-calc {background: #f3f3f3; padding: 3em 0;}
-.block_form-calc>.container {background: #fff;}
+.block_form-calc h4 {
+  font-size: 18pt;
+  color: rgb(66, 67, 72);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.block_form-calc>.container_tab-content {
+	background: #fff;
+	padding: 3.125em 3.750em;
+	-webkit-box-shadow: 3px 4px 6px rgba(41,72,79,.07);
+	-moz-box-shadow: 3px 4px 6px rgba(41,72,79,.07);
+	box-shadow: 3px 4px 6px rgba(41,72,79,.07);
+}
+
+.block_form-calc ul.tabs_2{
+	margin: 0px;
+	padding: 0px;
+	list-style: none;
+}
+.block_form-calc ul.tabs_2 li{
+	background: none;
+	color: #222;
+	display: inline-block;
+	padding: 10px 15px;
+	cursor: pointer;
+}
+
+.block_form-calc ul.tabs_2 li.current{
+	background: #ededed;
+	color: #222;
+}
+
+.block_form-calc .tab-content.current{
+	display: inherit;
+}
+.block_form-calc .container_nav-tabs {padding: 0;}
+#myTab{display: flex; justify-content: center;}
+#myTab li a{
+color: rgba(66, 67, 72, 0.502);
+font-size: 11pt;
+font-weight: bold;
+text-transform: uppercase;
+border-top: none;
+border-left: none;
+border-right: none;
+}
+
+#myTab li.active, #myTab li:hover {
+	border-bottom: #e86c20 3px solid;
+	background: none;
+}
+#myTab.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{background: none;}
+#myTab.nav-tabs>li.active>a:hover{border-bottom: none;background: none;}
+#myTab.nav-tabs>li>a{border: none;}
+
+.block_form-calc .container_itog {
+position: relative;
+margin-top: 2em;
+float: right;
+display: flex;
+flex-direction: row;
+justify-content: flex-end;
+align-items: center;
+text-align: center;
+color: rgb(66, 67, 72);
+font-weight: bold;
+line-height: 1.389;
+font-size: 14pt;
+}
+.block_form-calc .container_itog p{margin-bottom: 0;margin-right: 3.125em;}
+.block_form-calc .container_itog p span {color: #e86c20;}
+.block_form-calc .container_itog input {
+	padding: 1em 2em;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  background-color: #e86c20;
+  border: none;
+  color: #fff;
+  font-size: 9pt;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
 
 /*----call me----*/
 .block_call{
@@ -328,6 +412,7 @@ padding-right: 15px;
 	font-size: 10pt;
 	margin-top: 0.625em;
 }
+/*----- block  athers room-----*/
 .block_others-room, .block_form-culc {padding: 6em 0;}
 .block_others-room h4,.block_form-culc h4 {
 	font-size: 18pt;

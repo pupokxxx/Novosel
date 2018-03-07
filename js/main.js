@@ -28,4 +28,9 @@ jQuery(document).ready(function($) {
 		 dots: true,
 	 });
 
+	 $('#myTab li a').click(function (e) {
+	   e.preventDefault()
+	   $(this).tab('show')
+	 });
+
 });
