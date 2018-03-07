@@ -5,6 +5,7 @@
 @import "./slick.css";
 
 .text-bold{font-weight: bold;}
+input{outline: none;}
 /* хлебные крошки */
 .breadcrumb{background: none;}
 .container_card h2{
@@ -395,6 +396,7 @@ font-size: 14pt;
 		height: 40px;
 		margin-right: 1em;
 		text-align: center;
+		color: #000;
 }
 .block_call .block_contact-form input[type="submit"]{
 	width: 166px;
@@ -442,7 +444,7 @@ padding: 10px;
 	background:  #81ba27;
 	color: #fff;
 }
-.block_others-room .thumbnail{
+.thumbnail{
 	padding: 0;
 	border: none;
 	-webkit-box-shadow: 3px 4px 6px rgba(41,72,79,.07);
@@ -455,17 +457,16 @@ padding: 10px;
 	font-size: 14pt;
 	color: #424348;
 }
-.block_others-room .thumbnail:hover{
+ .thumbnail:hover{
 	-webkit-box-shadow: 6px 6px 8px rgba(41,72,79,.1);
 	-moz-box-shadow: 6px 6px 8px rgba(41,72,79,.1);
 	box-shadow: 6px 6px 8px rgba(41,72,79,.1);
 }
 
-.block_others-room .thumbnail .caption .text_adress{font-size: 11pt;color: rgba(66, 67, 72, 0.502);}
-
+ .thumbnail .caption .text_adress{font-size: 11pt;color: rgba(66, 67, 72, 0.502);}
 .block_others-room .thumbnail:hover .caption .more_info{display: block;}
 .block_others-room .thumbnail .caption {padding: .3em 1.5em;}
-.block_others-room .thumbnail .caption .more_info{
+ .thumbnail .caption .more_info{
 	position: relative;
 	text-align: right;
 	display: none;
@@ -475,7 +476,7 @@ padding: 10px;
 	text-transform: uppercase;
 	color: #81ba27;
 }
-.block_others-room .thumbnail .caption .more_info a {
+ .thumbnail .caption .more_info a {
 	text-decoration: none;
 	font-size: 11pt;
 	font-weight: bold;
@@ -483,13 +484,15 @@ padding: 10px;
 	color: #81ba27;
 	text-align: center;
 }
-.block_others-room .thumbnail .caption .text_price{
+.thumbnail .caption .text_price{
 	display: flex;
 	justify-content: space-between;
 }
-.block_others-room .thumbnail .caption .text_price .text-right{
+.thumbnail .caption .text_price .text-right{
 	font-size: 16pt;
 	color: #81ba27;
+	display: flex;
+  align-items: center;
 }
 .slick-dots li button:before {
 	top: -5px;
@@ -505,6 +508,51 @@ padding: 10px;
 	background: #fff;
 }
 
+.block_results-left {padding: 0;}
+ .block_results-left .thumbnail{
+	display: flex;
+	flex-direction: row;
+}
+
+	.thumbnail:hover .caption .more_info{display: inline-block;}
+	.block_results-left .thumbnail:hover .caption .text_adress{color: #000;}
+	.block_results-left .thumbnail .thumbnail_input{display: flex;flex-direction: row; align-items: center;padding: 0; margin-top: 2.666em;}
+	.block_results-left .thumbnail:hover .caption .thumbnail_input input{background:#81ba27; color: #fff;}
+.block_results-left .thumbnail .thumbnail_input input{
+	border:  #81ba27 1px solid;
+	background:  #fff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #81ba27;
+	text-transform: uppercase;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+  width: 100px;
+  height: 38px;
+	margin-right: 1.20em;
+}
+.block_results-left .thumbnail .thumbnail_input a[role="button"]{
+	border:  #e86c20 1px solid;
+	background:  #e86c20;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 10pt;
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	width: 100px;
+	height: 38px;
+	margin-right: 1em;
+}
+
+.block_results-left .thumbnail .thumbnail_input a[role="button"] img{margin:auto 2px;}
+.block_results-left .thumbnail .caption .more_info a{font-size: 12px;}
 
 @media (max-device-width: 1366px) and (min-device-width: 320px){
 	.container_card,
@@ -528,4 +576,10 @@ padding: 10px;
 	.block_call .block_contact-form input {margin-bottom: 5px; width: 100%!important;}
 	.block_others-room .btn_filter input {font-size: 7pt;}
 	.block_others-room .container .row:last-child{margin-right: 0px;margin-left: 0px;}
+	.block_form-calc .container_nav-tabs #myTab a{font-size: 8pt; padding-left: 2px; padding-right: 2px;}
+	.block_form-calc>.container_tab-content {padding: 1.125em .75em;}
+	.block_form-calc .container_itog {flex-direction: column;}
+	.block_form-calc .container_itog p {margin-right: 0;}
+
+	.block_results{display: none;}
 }
